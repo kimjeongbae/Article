@@ -14,20 +14,28 @@
 
 ## 미비사항 or 막힌 부분
 ![](https://velog.velcdn.com/images/gprhf651/post/cf4e0692-f181-44c7-aa06-ff206789ecda/image.png)
-- 등록 버튼을 누르면 http://주소:포트/article/create 경로로 이동하여 등록폼이 나와야 하는데 500 Error 메세지가 출력 되었음.
-  ![](https://velog.velcdn.com/images/gprhf651/post/0cc09679-0d7e-4e29-959c-aa080518f79a/image.png)
+
+- 등록 버튼을 누르면 http://주소:포트/article/create 경로로 이동하여 등록폼이 나와야 하는데 
+- 500 Error 메세지가 출력 되었음.
+
+
+- ![](https://velog.velcdn.com/images/gprhf651/post/0cc09679-0d7e-4e29-959c-aa080518f79a/image.png)
 
 -> article_form 으로 return을 하였는데
 
 ![](https://velog.velcdn.com/images/gprhf651/post/6e38fdd5-ec32-4026-aafa-b3f02605eb8e/image.png)
+
 ->html을 article.form으로 작성 하여 발생한 오류.
 
 ![](https://velog.velcdn.com/images/gprhf651/post/5583e17d-4458-42f5-a5be-46fc3f1f5413/image.png)
+
 -> article_form으로 변경 하니 Error 메시지가 나오지 않았음.
+
+
 ![](https://velog.velcdn.com/images/gprhf651/post/63ac2637-9471-4742-93f5-4582848f8df9/image.png)
 
 Error 메시지가 출력되면 at.org 부분을 전부 제외하고 위에나 마지막에 있는
-에러메시지를 잘 봐야겠다.
+에러메시지를 캐치하여 오류를 잡아야 겠다.
 
 
 ## MVC 패턴
@@ -35,14 +43,17 @@ Error 메시지가 출력되면 at.org 부분을 전부 제외하고 위에나 �
 -> MVC는 Model, View, Controller의 약자
 하나의 애플리케이션,프로젝트를 구성할 때 그 구성요소를 세가지 역할로 구분하는 패턴
 
-### 모델(Moderl)
+### 모델(Model)
 -> 소프트웨어나 애플리케이션에서 정보 및 데이터 부분을 의미
 Controller에게 받은 데이터를 조작(가공)하는 역할을 수행
 즉, 데이터와 관련된 부분을 담당하며 값과 기능을 가지는 객체
 
 Model이 가지는 규칙
+
 `1. 사용자가 편집하길 원하는 모든 데이터를 가지고 있어야 함`
+
 ` 2. View나 Controller에 대해서 어떤 정보도 알지 말아야 함`
+
 ` 3. 변경이 일어나면, 변경 통지에 대한 처리 방법을 구현해야만 한다.`
 
 ### 뷰(View)
@@ -51,8 +62,11 @@ Controller에게 받은 Model의 데이터를 사용자에게 시각적으로 �
 즉, 사용자에게 보여지는 화면이라고 볼 수 있다.
 
 View가 가지는 규칙
+
 `1. Model이 가지고 있는 정보를 따로 저장해서는 안된다.`
+
 `2. Model이나 Controller를 알고 있을 필요가 없다.`
+
 `3. 변경이 일어나면 변경통지에 대한 처리방법을 구현해야만 한다.`
 
 ### 컨트롤러(Controller)
@@ -62,7 +76,9 @@ Service에서 비즈니스 로직을 처리한다. 이후 결과를 Model에 저
 Controller는 Model과 View의 역할을 분리하는 중요한 요소이다.
 
 Controller가 가지는 규칙
+
 `1. Model이나 View에 대해서 알고 있어야 한다.`
+
 `2. Model이나 View의 변경을 모니터링 해야 한다.`
 
 ## 스프링에서 의존성 주입(DI) 방법 3가지 방법
@@ -106,6 +122,7 @@ Controller가 가지는 규칙
 ## JPA의 장점과 단점
 - JPA 개념
   -> Java Persistence API 는 자바의 ORM 기술의 표준
+- 
   -> 구현체가 따로 없으며 ORM 프레임 워크를 선택하여 사용
 
 ### 장점
