@@ -11,6 +11,12 @@
 - 게시글 등록 페이지 (http://주소:포트/article/create)에서 등록버튼 옆에 등록 취소 버튼을 만들어서
   등록취소 버튼을 누르면 http://주소:포트/article/list 로 이동하도록 만들었음.
 - layout을 추가하여 html을 좀더 보기 편하게 만들었음.
+![img.png](img.png)
+- (http://주소:포트/article/list) 리스트 화면
+![img_1.png](img_1.png)
+- (http://주소:포트/article/create) 등록 화면
+![img_2.png](img_2.png)
+- http://주소:포트/article/detail/{id} 상세 화면
 
 ## 미비사항 or 막힌 부분
 ![](https://velog.velcdn.com/images/gprhf651/post/cf4e0692-f181-44c7-aa06-ff206789ecda/image.png)
