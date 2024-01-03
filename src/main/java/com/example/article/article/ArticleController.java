@@ -36,6 +36,7 @@ public class ArticleController {
     public String articleCreate() {
         return "article_form";
     }
+
     @PostMapping("/create")
     public String articleCreate(@RequestParam(value="subject") String subject, @RequestParam(value="content") String content) {
         this.articleService.create(subject,content);
