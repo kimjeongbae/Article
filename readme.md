@@ -14,15 +14,15 @@
 
 ![img.png](img.png)
 
-- (http://주소:포트/article/list) 리스트 화면
+- (http://주소:포트/article/list) 리스트페이지 구현화면
 
 ![img_1.png](img_1.png)
 
-- (http://주소:포트/article/create) 등록 화면
+- (http://주소:포트/article/create) 등록페이지 구현화면 (추가 등록취소버튼 구현)
 
 ![img_2.png](img_2.png)
 
-- http://주소:포트/article/detail/{id} 상세 화면
+- http://주소:포트/article/detail/{id} 상세페이지 구현화면 
 
 ## 미비사항 or 막힌 부분
 ![](https://velog.velcdn.com/images/gprhf651/post/cf4e0692-f181-44c7-aa06-ff206789ecda/image.png)
@@ -95,6 +95,7 @@ Controller가 가지는 규칙
 
 ## 스프링에서 의존성 주입(DI) 방법 3가지 방법
 의존 관계가 변경되지 않을 경우 : 생성자 주입
+
 의존 관계가 선택적이거나 변경 가능한 경우 : 수정자 주입(setter 주입)
 
 ### 1. 생성자 주입
