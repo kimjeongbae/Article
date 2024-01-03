@@ -22,7 +22,7 @@
 
 ![img_2.png](img_2.png)
 
-- http://주소:포트/article/detail/{id} 상세페이지 구현화면 
+- http://주소:포트/article/detail/{id} 상세페이지 구현화면 (제목 내용, 작성시간 받아옴)
 
 ## 미비사항 or 막힌 부분
 ![](https://velog.velcdn.com/images/gprhf651/post/cf4e0692-f181-44c7-aa06-ff206789ecda/image.png)
